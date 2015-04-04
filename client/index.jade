@@ -2,13 +2,15 @@ doctype html
 html
   head
     meta(charset='utf-8')      
-    title Apollo
+    title Movie Tribute
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
     link(rel='shortcut icon', href='/favicon.ico')
   body
-    img#apollo(src='/assets/apollo.jpg')
-    h1#title Apollo
-
-    script(src='/vendor/lodash/lodash.min.js')
+    div#container
+      div
+        div#title: h1 Movie Tribute
+      include nav
+      block content
+        
     script(src=isProd ? '/index.min.js' : '/index.js')

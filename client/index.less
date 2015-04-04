@@ -1,19 +1,67 @@
-body{
-  color: hsla(52, 100%, 20%, 1.0);
-  background-color: #FFDC00;
-}
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+@import url(http://fonts.googleapis.com/css?family=Chewy);
+body {
+  background-image: url('/assets/Popcorn-boom-Is-there-room-for-growth-competition.jpg');
+  background-size: cover;
+  background-repeat: norepeat;
 
-#apollo{
-  border: 5px solid hsla(52, 100%, 20%, 1.0);
-  width: 150px;
-  height: 225px;
 }
-
-#title{
+html, body, #container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  padding: 25px;
+  background-color: rgba(255, 199, 33, 0.29);
+}
+#title {
+  font-family: Righteous;
+  font-size: 50px;
   position: relative;
-  top: -170px;
-  left: 200px;
-  font-family: monospace;
-  letter-spacing: 10px;
-  font-size: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+p {
+  font-family: Chewy;
+  font-size: 15px;
+}
+a:visited {
+  color: blue;
+}
+a {
+  text-decoration: none;
+}
+#poster > img {
+  border: 10px, black;
+  border-style: solid;
+  border-radius: 10px;
+}
+a:hover {
+  color: red;
+}
+#p {
+  width: 45%;
+  float: left;
+  padding: 10px;
+}
+#links {
+  float: left;
+}
+#nav {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+#nav > ul {
+  list-style-type: none;
+}
+#nav li {
+  font-size: 20px;
+  display: inline-block;
+}
+#links li {
+  font-size: 20px;
+  list-style-type: none;
 }
